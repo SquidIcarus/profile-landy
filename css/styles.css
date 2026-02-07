@@ -218,3 +218,25 @@ section h2 {
     max-width: 900px;
     margin: 0 auto;
 }
+
+.skill-category {
+    flex: 1 1 200px;
+    text-align: center;
+}   
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+.skill-category ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.skill-category li {
+    font-size: 1.125rem;
+}
+
+
