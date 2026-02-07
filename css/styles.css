@@ -239,4 +239,19 @@ section h2 {
     font-size: 1.125rem;
 }
 
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
