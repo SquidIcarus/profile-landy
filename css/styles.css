@@ -51,6 +51,12 @@ nav {
     text-decoration: none;
 }
 
+.nav-links {
+    display: flex;
+    gap: var(--spacing-md);
+    list-style: none;
+}
+
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
@@ -261,4 +267,44 @@ footer {
     text-align: center;
     padding: var(--spacing-md);
     font-size: 0.875rem;
+}
+    
+@media (max-width: 768px) {
+    #hero h1{
+        padding: var(--spacing-sm);
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        gap: var(--spacing-md);
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}   
+
+@media (max-width: 480px) {
+     .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #hero h1 {
+        font-size: 1.75rem;
+    }
 }
