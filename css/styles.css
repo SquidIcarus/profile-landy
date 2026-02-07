@@ -255,3 +255,10 @@ section h2 {
     flex-wrap: wrap;
 }
 
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-md);
+    font-size: 0.875rem;
+}
