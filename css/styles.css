@@ -114,3 +114,18 @@ nav {
 .btn:hover {
     background: #2980b9;
 }
+
+section {
+    padding: var(--spacing-xl) 0;
+}
+
+section:nth-child(even) {
+    background: var(--light-bg);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
