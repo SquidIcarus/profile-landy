@@ -60,3 +60,42 @@ nav {
 .nav-links a:hover {
     color: var(--accent-color);
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+#hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;;
+}
+
+#hero. container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.intro {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: var(--spacing-sm) 0;
+}
