@@ -75,7 +75,7 @@ nav {
     text-align: center;;
 }
 
-#hero. container {
+#hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,4 +98,19 @@ nav {
     font-size: 1.125rem;
     max-width: 600px;
     margin: var(--spacing-sm) 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    margin-top: var(--spacing-sm);
+}
+
+.btn:hover {
+    background: #2980b9;
 }
