@@ -129,3 +129,10 @@ section h2 {
     margin-bottom: var(--spacing-lg);
     text-align: center;
 }
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-md) auto;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
