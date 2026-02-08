@@ -16,7 +16,7 @@
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+    --spacing-xl: 3rem;
 }
 
 html {
@@ -73,7 +73,7 @@ nav {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: 0 var(--spacing-md);
 }
 
 #hero {
@@ -125,7 +125,7 @@ nav {
 }
 
 section {
-    padding: var(--spacing-xl) 0;
+    padding: 3rem 0;
 }
 
 section:nth-child(even) {
