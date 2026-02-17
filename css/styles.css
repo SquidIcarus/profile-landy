@@ -31,7 +31,7 @@ body {
 
 nav {
     background: var(--white);
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -144,9 +144,10 @@ section h2 {
 
 .projects-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
-    justify-content: center;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -154,7 +155,9 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-top: 3px solid var(--accent-color);
 }
@@ -165,19 +168,34 @@ section h2 {
 }
 
 .project-card img {
-    width: 100%;
-    height: auto;
+    width: 40%;
+    height: 300px;
     object-fit: contain;
+    flex-shrink: 0;
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md);
+    flex: 1;
+    gap: var(--spacing-sm);
 }
 
 .project-card h3 {
-    padding: var(--spacing-sm) var(--spacing-sm) 0;
+    padding: 0;
     color: var(--primary-color);
     font-family: 'Outfit', sans-serif;
 }
 
+.project-card.reverse {
+    flex-direction: row-reverse;
+}
+
 .project-card p {
-    padding: var(--spacing-sm);
+    padding: 0;
     flex-grow: 1;;
 }
 
@@ -185,7 +203,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 0 var(--spacing-sm);
+    padding: 0;
 }
 
 .tech-stack span {
@@ -199,7 +217,7 @@ section h2 {
 .project-links {
     display: flex;
     gap: var(--spacing-sm);
-    padding: var(--spacing-sm);
+    padding: 0;
 }
 
 .project-links a {
@@ -276,31 +294,32 @@ footer {
         color: var(--highlight);
         font-weight: 500;
     }
+
+.offset-left {
+    margin-right: auto;
+    margin-left: 0;
+    width: 85%;
+}
+
+.offset-right {
+    margin-left: auto;
+    margin-right: 0;
+    width: 85%;
+}
     
 @media (max-width: 768px) {
-    #hero h1{
-        padding: var(--spacing-sm);
-        font-size: 2rem;
-    }
-
-    .nav-links {
-        gap: var(--spacing-md);
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .projects-grid {
+    .project-card,
+    .project-card.reverse {
         flex-direction: column;
-        align-items: center;
     }
-
-    .project-card {
+    
+    .project-card img {
         width: 100%;
-        max-width: 400px;
+        height: 200px;
+        object-fit: contain;
+        background-color: var(--light-bg);
     }
-}   
+}
 
 @media (max-width: 480px) {
      .nav-links {
