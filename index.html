@@ -16,9 +16,24 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>          
+            </ul>
+            
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <div class="nav-overlay" role="dialog" aria-label="Navigation menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    </div>
 
     <section id="hero">
         <div class="container">
@@ -27,13 +42,26 @@
             <p class="intro">I build full-stack web applications with JavaScript, React, Node.js, and Python, with experience designing RESTful APIs and working with relational databases. I recently completed an immersive software engineering program and am focused on building clean, practical solutions to real-world problems. I'm comfortable learning new tools and technologies as needed.</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
+
+        <div class="hero-wave">
+            <svg
+                viewBox="0 0 1440 70"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,70 L0,70 Z"
+                    fill="#F1F5F9"
+                />
+            </svg>
+        </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
             <p>I'm a full-stack software engineer based in Portland, OR. After 20+ years working in kitchens including several years as an Executive Chef, leading teams, building systems, and running high pressure environments, I made a deliberate pivot into tech.</p>
-        <p>I completed General Assembly's Software Engineering Immersive and found that the skills that made me a strong chef translate well to software development: breaking down complex problems, building efficient systems, and staying calm under preasure</p>
+        <p>I completed General Assembly's Software Engineering Immersive and found that the skills that made me a strong chef translate well to software development: breaking down complex problems, building efficient systems, and staying calm under pressure.</p>
         <p>Outside of coding, you'll find me on a trail, experimenting in the kitchen, or playing and enjoying live music.</p>
         </div>
     </section>
