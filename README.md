@@ -26,10 +26,6 @@ A personal portfolio site built to showcase my projects and skills as a full-sta
 
 Running Locally
 No build tools or dependencies required.
-bashgit clone https://github.com/SquidIcarus/profile-landy.git
-cd profile-landy
-open index.html
-Or just open index.html directly in your browser.
 
 Projects Featured
 ProjectStackLinksGio the Memory ArpeggiatorHTML, CSS, JavaScriptDemo · RepoThe BrewlogueNode.js, Express, MongoDBDemo · RepoThe Gallery CollectiveReact, Django, PostgreSQLDemo · API Repo · Frontend Repo
